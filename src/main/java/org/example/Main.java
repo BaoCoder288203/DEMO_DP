@@ -1,6 +1,7 @@
 package org.example;
 
 import org.example.Singleton.Eager;
+import org.example.Singleton.Lazy;
 import org.example.Singleton.StaticBlock;
 
 public class Main {
@@ -8,7 +9,10 @@ public class Main {
 //        Eager eager = Eager.getInstance();
 //        System.out.println(eager);
 
-        StaticBlock staticBlock = StaticBlock.getInstance();
-        System.out.println(staticBlock.hashCode());
+//        StaticBlock staticBlock = StaticBlock.getInstance();
+//        System.out.println(staticBlock.hashCode());
+
+        Lazy lazy = Lazy.getInstance();
+        System.out.println(lazy.hashCode());
     }
 }
