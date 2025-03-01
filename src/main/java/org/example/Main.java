@@ -1,8 +1,7 @@
 package org.example;
 
-import org.example.Singleton.Eager;
-import org.example.Singleton.Lazy;
-import org.example.Singleton.StaticBlock;
+import org.example.Singleton.ThreadSafe;
+
 
 public class Main {
     public static void main(String[] args) {
@@ -12,7 +11,17 @@ public class Main {
 //        StaticBlock staticBlock = StaticBlock.getInstance();
 //        System.out.println(staticBlock.hashCode());
 
-        Lazy lazy = Lazy.getInstance();
-        System.out.println(lazy.hashCode());
+//        Lazy lazy = Lazy.getInstance();
+//        System.out.println(lazy.hashCode());
+
+        new Thread(()->{
+            ThreadSafe thread = ThreadSafe.getInstance();
+            System.out.println(thread.hashCode());
+        }).start();
+        new Thread(()->{
+            ThreadSafe thread2 = ThreadSafe.getInstance();
+            System.out.println(thread2.hashCode());
+        }).start();
+
     }
 }
