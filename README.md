@@ -2,9 +2,10 @@ Phần 1:	Các lệnh cơ bản thao tác với Docker
 
 	1	docker --version	
  - Cho biết phiên bản hiện tại Docker đang được cài vào máy
-   
-	2	docker run hello-world	
-	3	docker pull nginx	
+![image](https://github.com/user-attachments/assets/41979564-6645-4e80-a228-0ab73d36ad9a)
+
+   	2	docker run hello-world
+   	3	docker pull nginx	
 	4	docker images	
 	5	docker run -d nginx	
 	6	docker ps	
