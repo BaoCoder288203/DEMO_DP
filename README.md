@@ -1,6 +1,8 @@
-`Phần 1:	Các lệnh cơ bản thao tác với Docker`
+Phần 1:	Các lệnh cơ bản thao tác với Docker
 
 	1	docker --version	
+ - Cho biết phiên bản hiện tại Docker đang được cài vào máy
+   
 	2	docker run hello-world	
 	3	docker pull nginx	
 	4	docker images	
